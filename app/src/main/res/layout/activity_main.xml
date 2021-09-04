@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="107dp"
+        android:layout_height="200dp"
+        android:background="@drawable/trial1"
+        android:backgroundTint="@color/purple_1" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="107dp"
+        android:background="@drawable/maingradient2"
+        android:backgroundTint="@color/purple_1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:layout_width="194dp"
+        android:layout_height="194dp"
+        android:background="@drawable/maingradient1"
+        android:backgroundTint="@color/purple_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/parent_layout">
+
+
+        <FrameLayout
+            android:id="@+id/bottomFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottomNavigation"
+            app:mbn_selectedIconColor="@color/mtrl_textinput_default_box_stroke_color"
+            app:mbn_defaultIconColor="@color/white"
+            app:mbn_shadowColor="@color/black"
+            app:mbn_rippleColor="@color/Blue_2"
+            android:isScrollContainer="false"
+            app:mbn_backgroundBottomColor="@color/purple_2"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

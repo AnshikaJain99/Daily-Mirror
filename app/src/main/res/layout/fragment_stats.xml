@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".StatsFragment">
+
+
+        <!--    <TextView-->
+        <!--        android:layout_width="107dp"-->
+        <!--        android:layout_height="200dp"-->
+        <!--        android:background="@drawable/trial1"-->
+        <!--        android:backgroundTint="@color/purple_1" />-->
+
+        <!--    <TextView-->
+        <!--        android:layout_width="200dp"-->
+        <!--        android:layout_height="107dp"-->
+        <!--        android:background="@drawable/maingradient2"-->
+        <!--        android:backgroundTint="@color/purple_1" />-->
+
+        <!--    <TextView-->
+        <!--        android:layout_width="194dp"-->
+        <!--        android:layout_height="194dp"-->
+        <!--        android:background="@drawable/maingradient1"-->
+        <!--        android:backgroundTint="@color/purple_1"-->
+        <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="18dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:id="@+id/stats_layout"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/statsback"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/purple_1"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="sans-serif-black"
+                android:padding="8dp"
+                android:shadowColor="@color/purple_1"
+                android:text="Statistics"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/stats_layout"
+            android:orientation="vertical">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="15dp"
+                android:id="@+id/weatherBG"
+                android:outlineSpotShadowColor="@color/purple_1"
+                app:cardElevation="60dp"
+                android:padding="4dp"
+                android:elevation="@dimen/cardview_compat_inset_shadow">
+
+
+                <!--        <LinearLayout-->
+                <!--            android:layout_width="match_parent"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:layout_margin="4sp"-->
+                <!--            android:orientation="vertical">-->
+                <!--        -->
+                <!--            <LinearLayout-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:gravity="center">-->
+                <!--                -->
+                <!--                <ImageView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="match_parent"-->
+                <!--                    android:src="@drawable/ic_baseline_cloud_24"/>-->
+
+                <!--                <TextView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="weather"-->
+                <!--                    android:layout_marginStart="8sp"-->
+                <!--                    android:textColor="@color/Blue_2"-->
+                <!--                    android:textSize="30sp"-->
+                <!--                    android:id="@+id/weatherTemp"/>-->
+                <!--                -->
+                <!--            </LinearLayout>-->
+
+                <!--        <TextView-->
+                <!--            android:layout_width="match_parent"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:text="weather"-->
+                <!--            android:gravity="center"-->
+                <!--            android:textColor="@color/Blue_2"-->
+                <!--            android:textSize="30sp"-->
+                <!--            android:id="@+id/weatherLoc"/>-->
+
+                <!--        </LinearLayout>-->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="100dp"
+                        android:layout_margin="5sp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="@dimen/cardview_compat_inset_shadow"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:id="@+id/weatherIcon"
+                            android:src="@drawable/ic_baseline_cloud_24" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4sp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="weather"
+                            android:padding="2sp"
+                            android:textColor="@color/black"
+                            android:textSize="30sp"
+                            android:id="@+id/weatherTemp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="weather"
+                            android:padding="2sp"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:id="@+id/weatherLoc"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="1"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:layout_margin="8dp"
+                    android:id="@+id/monthSpinner"/>
+
+                <Spinner
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:layout_margin="8dp"
+                    android:id="@+id/emotionSpinner"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GO"
+                    android:background="@drawable/button_gradient"
+                    android:layout_weight="0.1"
+                    android:layout_marginEnd="4dp"
+                    android:id="@+id/barButton"/>
+
+            </LinearLayout>
+
+            <!--        <TextView-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:id="@+id/happy"-->
+            <!--            android:text="Stats" />-->
+
+            <!--        <TextView-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:id="@+id/angry"-->
+            <!--            android:text="Stats" />-->
+
+            <!--        <TextView-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:id="@+id/surprise"-->
+            <!--            android:text="Stats" />-->
+
+            <!--        <TextView-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:id="@+id/sad"-->
+            <!--            android:text="Stats" />-->
+
+            <!--        <TextView-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:id="@+id/fear"-->
+            <!--            android:text="Stats" />-->
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="15dp"
+                android:outlineSpotShadowColor="@color/purple_1"
+                app:cardElevation="60dp"
+                android:padding="4dp"
+                android:elevation="@dimen/cardview_compat_inset_shadow"
+                android:layout_height="wrap_content">
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:layout_width="match_parent"
+                    android:layout_height="300sp"
+                    android:id="@+id/latest_barchart"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="15dp"
+                android:outlineSpotShadowColor="@color/purple_1"
+                app:cardElevation="60dp"
+                android:padding="4dp"
+                android:elevation="@dimen/cardview_compat_inset_shadow">
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:layout_width="match_parent"
+                    android:layout_height="300sp"
+                    android:visibility="gone"
+                    android:id="@+id/latest_piechart"/>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="4dp"
+    app:cardCornerRadius="10dp"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    app:cardBackgroundColor="@color/Blue_1"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="20dp"
+    android:elevation="10dp" >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="2dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/title"
+                tools:text="Title"
+                android:textSize="19dp"
+                android:layout_alignParentStart="true"
+                android:textStyle="bold"
+                android:ellipsize="end"
+                android:visibility="visible"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/description"
+                android:layout_marginTop="2dp"
+                android:textSize="16dp"
+                android:layout_below="@+id/title"
+                android:layout_alignParentStart="true"
+                tools:text="Description"
+                android:visibility="visible"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/category"
+                tools:text="Category"
+
+                android:textSize="12dp"
+                android:visibility="visible"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textSize="12dp"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/description"
+                android:layout_alignParentStart="true"
+                android:id="@+id/date"
+                android:visibility="visible"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="00-00-0000"
+                android:layout_below="@+id/date"
+                android:id="@+id/showDate"
+                android:textSize="12dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="4dp"
+                android:visibility="visible"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:layout_below="@id/description"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/time"
+                android:layout_marginTop="2dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="12dp"
+                android:visibility="visible"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="00:00 am"
+                android:layout_below="@id/time"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/showTime"
+                android:textSize="12dp"
+                android:layout_marginBottom="4dp"
+                android:visibility="visible"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
